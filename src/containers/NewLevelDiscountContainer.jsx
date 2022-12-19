@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {NewLevelDiscount} from '../components';
-import {getAuthToken} from '../api/config';
+import React, { useState, useEffect } from "react";
+import { NewLevelDiscount } from "../components";
 
-const NewLevelDiscountContainer = ({animateClass}) => {
-  console.log(getAuthToken('user1', '123456'));
+const NewLevelDiscountContainer = ({ animateClass }) => {
   const [progressBar, setProgressBar] = useState(0);
 
   const handleSetProgressBar = () => {
@@ -14,7 +12,9 @@ const NewLevelDiscountContainer = ({animateClass}) => {
     setTimeout(handleSetProgressBar, 1000);
   }, []);
 
-  return <NewLevelDiscount progressBar={progressBar} animateClass={animateClass} />;
+  return (
+    <NewLevelDiscount progressBar={progressBar} animateClass={animateClass} />
+  );
 };
 
 export default NewLevelDiscountContainer;
