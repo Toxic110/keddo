@@ -1,8 +1,8 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React from "react";
+import { HashRouter as Router, Route } from "react-router-dom";
 
-import {Bonus, Discount, Home} from './pages';
-import ScrollToTop from './components/ScrollTop';
+import { Bonus, Discount, Home } from "./pages";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
   return (
