@@ -1,0 +1,45 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+*:focus {
+  outline: none;
+}
+
+  html, body {
+    line-height: 1;
+    vertical-align: baseline;
+    font-size: pxToVwMobile(16px);
+    font-family: $font-family-text;
+    color: color('text');
+    font-feature-settings: "case" 0;
+  }
+
+  html,
+  body,
+  .layout {
+    width: 100%;
+  }
+
+  main {
+    padding: pxToVwMobile(10px) 0 pxToVwMobile(30px);
+  }
+
+  .container {
+    padding: 0 pxToVwMobile(10px);
+  }
+
+  .content-title {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    @include font-default;
+  }
+
+  .home-link {
+    display: block;
+    margin-top: pxToVwMobile(10px);
+    text-decoration: none;
+  }

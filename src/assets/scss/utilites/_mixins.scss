@@ -1,0 +1,32 @@
+@function pxToVwMobile($num) {
+  @return $num / 1px / 375 * 100vw;
+}
+
+@function pxToVwHD($num) {
+  @return $num / 1px / 1920 * 100vw;
+}
+
+@function pxToVwLayoutSize($num) {
+  @return $num / 1px / 1170 * 100vw;
+}
+
+@function pxToEm($num, $default-font-size: $font-size-default) {
+  @return #{$num / $default-font-size}em;
+}
+
+@function pxToRem($font-size, $base-font-size: 16px) {
+  @return #{$font-size / $base-font-size}rem;
+}
+
+
+@mixin mediaToDown($width, $device: 'all') {
+  @media #{$device} and (max-width: #{$width - 1px}) {
+    @content;
+  }
+}
+
+@mixin content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

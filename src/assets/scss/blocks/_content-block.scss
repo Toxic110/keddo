@@ -1,0 +1,9 @@
+.content-block {
+
+  &__body {
+    padding: pxToVwMobile(20px) pxToVwMobile(34px);
+    margin-top: pxToVwMobile(10px);
+    border-radius: pxToVwMobile(8px);
+    background: color('background');
+  }
+}

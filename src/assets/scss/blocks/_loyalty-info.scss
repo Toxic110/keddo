@@ -1,0 +1,29 @@
+.loyalty-info {
+  padding-top: pxToVwMobile(20px);
+  font-size: pxToVwMobile(10px);
+  line-height: pxToVwMobile(14px);
+
+  &__title {
+    margin-bottom: pxToVwMobile(4px);
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: pxToVwMobile(7px);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: pxToVwMobile(6px);
+        width: pxToVwMobile(2.5px);
+        height: pxToVwMobile(.5px);
+        background: color('black');
+      }
+    }
+  }
+}

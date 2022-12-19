@@ -1,0 +1,22 @@
+.barcode {
+
+  &__img {
+    width: pxToVwMobile(206px);
+    padding: pxToVwMobile(10px);
+    margin: pxToVwMobile(6px) auto;
+    background: color('white');
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: pxToVwMobile(18px);
+    line-height: pxToVwMobile(22px);
+    text-transform: uppercase;
+    text-align: center;
+    color: color('black');
+  }
+}

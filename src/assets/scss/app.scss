@@ -1,0 +1,23 @@
+/*
+   Import partials below
+*/
+
+@import "./base/color";
+@import './utilites/variables';
+@import "./base/typography";
+@import "./base/normolize";
+@import "./base/document";
+@import "./base/buttons";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/content-block";
+@import "./blocks/barcode";
+@import "./blocks/bonus";
+@import "./blocks/bonus-history";
+@import "./blocks/discount";
+@import "./blocks/new-level-discount";
+@import "./blocks/discount-nearby";
+@import "./blocks/discount-nearby-item";
+@import "./blocks/discount-family";
+@import "./blocks/loyalty-info";

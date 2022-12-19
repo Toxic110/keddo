@@ -1,0 +1,85 @@
+.discount-family {
+
+  &__list {
+    position: relative;
+    padding: pxToVwMobile(10px) 0;
+  }
+
+  &__item {
+    width: calc(100% + #{pxToVwMobile(28px)});
+    margin: pxToVwMobile(10px) pxToVwMobile(-14px) 0;
+    padding: pxToVwMobile(15px) pxToVwMobile(12px);
+    background: color('white');
+    border-radius: pxToVwMobile(8px);
+
+    &-head {
+      display: flex;
+      align-items: center;
+    }
+
+    &-avatar {
+      width: pxToVwMobile(64px);
+      height: pxToVwMobile(64px);
+      border-radius: 50%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &-description {
+      padding-left: pxToVwMobile(10px);
+    }
+
+    &-name {
+      @include font-default;
+      font-weight: 400;
+    }
+
+    &-role {
+      padding-top: pxToVwMobile(4px);
+      @include font-description;
+      color: color('grey');
+    }
+
+    &-body {
+      padding-top: pxToVwMobile(15px);
+    }
+
+    &-text {
+      @include font-default;
+      font-weight: 400;
+    }
+
+    &-general-cash {
+      padding-top: pxToVwMobile(4px);
+      @include font-cash;
+    }
+
+    &-footer {
+      padding-top: pxToVwMobile(15px);
+    }
+
+    &-level {
+      @include font-default;
+      text-transform: uppercase;
+      color: color('red');
+    }
+
+    &-cash {
+      padding-top: pxToVwMobile(4px);
+      @include font-default;
+    }
+
+    &-date {
+      padding-top: pxToVwMobile(4px);
+      @include font-description;
+      color: color('grey');
+    }
+  }
+}

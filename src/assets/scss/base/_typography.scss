@@ -1,0 +1,52 @@
+@mixin font-cash {
+  font-size: pxToVwMobile(20px);
+  line-height: pxToVwMobile(24px);
+  font-weight: 700;
+  color: color('black');
+}
+
+@mixin font-description {
+  font-size: pxToVwMobile(10px);
+  line-height: pxToVwMobile(12px);
+  color: color('black');
+}
+
+@mixin font-date {
+  font-size: pxToVwMobile(9px);
+  line-height: pxToVwMobile(11px);
+  color: color('grey');
+}
+
+@mixin font-default {
+  font-size: pxToVwMobile(12px);
+  line-height: pxToVwMobile(15px);
+  font-weight: 700;
+}
+
+@mixin font-percent {
+  font-size: pxToVwMobile(34px);
+  line-height: pxToVwMobile(41px);
+  font-weight: 700;
+  color: color('red');
+}
+
+@mixin font-percent-icon {
+  font-size: pxToVwMobile(26px);
+  line-height: pxToVwMobile(32px);
+  font-weight: 700;
+  color: color('red');
+}
+
+@mixin font-bonus {
+  font-size: pxToVwMobile(28px);
+  line-height: pxToVwMobile(34px);
+  font-weight: 700;
+  color: color('red');
+}
+
+@mixin font-named {
+  font-size: pxToVwMobile(16px);
+  line-height: pxToVwMobile(20px);
+  font-weight: 700;
+  color: color('black');
+}

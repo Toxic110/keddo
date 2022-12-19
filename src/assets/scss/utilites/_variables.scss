@@ -1,0 +1,5 @@
+@import './mixins';
+
+$border-default: pxToVwMobile(.5px) solid color('border');
+
+$font-family-text: 'Montserrat', sans-serif;

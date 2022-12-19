@@ -1,0 +1,36 @@
+.discount {
+
+  &__percent {
+    text-align: center;
+    @include font-percent;
+
+    &-icon {
+      @include font-percent-icon;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    @include font-description;
+  }
+
+  &__cash {
+    margin-top: pxToVwMobile(20px);
+    padding-top: pxToVwMobile(16px);
+    border-top: $border-default;
+    text-align: center;
+    @include font-cash;
+  }
+
+  &__description {
+    margin-top: pxToVwMobile(20px);
+    padding-top: pxToVwMobile(16px);
+    border-top: $border-default;
+    text-align: center;
+    @include font-description;
+
+    span {
+      @include font-default;
+    }
+  }
+}

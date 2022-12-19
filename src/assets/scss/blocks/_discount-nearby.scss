@@ -1,0 +1,62 @@
+.discount-nearby {
+  position: relative;
+  padding-top: pxToVwMobile(58px);
+  padding-bottom: pxToVwMobile(70px);
+  overflow: hidden;
+
+
+  &__cash {
+    @include font-cash;
+  }
+
+  &__pulse {
+    position: relative;
+    border-radius: 50%;
+    background: color('white');
+    box-shadow: 0 0 pxToVwMobile(20px) pxToVwMobile(3px) rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    //&:before {
+    //  content: '';
+    //  position: absolute;
+    //  left: 0;
+    //  right: 0;
+    //  top: 0;
+    //  bottom: 0;
+    //  border-radius: 50%;
+    //  background: rgba(0, 0, 0, .1);
+    //  animation: pulse 2s infinite;
+    //  z-index: -1;
+    //}
+
+    &--level-1 {
+      @include content-center;
+      width: calc(100% + #{pxToVwMobile(24px)});
+      height: pxToVwMobile(400px);
+      margin: 0 pxToVwMobile(-12px);
+    }
+
+    &--level-2 {
+      @include content-center;
+      width: pxToVwMobile(243px);
+      height: pxToVwMobile(243px);
+    }
+
+    &--level-3 {
+      @include content-center;
+      width: pxToVwMobile(133px);
+      height: pxToVwMobile(133px);
+    }
+  }
+}
+
+//@keyframes pulse {
+//  0% {
+//    transform: scale(1);
+//    opacity: .25;
+//  }
+//  100% {
+//    transform: scale(2);
+//    opacity: 0;
+//  }
+//}

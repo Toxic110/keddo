@@ -1,0 +1,48 @@
+.bonus-history {
+
+  &__container {
+    position: relative;
+    padding-top: pxToVwMobile(40px);
+    padding-bottom: pxToVwMobile(20px);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & + & {
+      margin-top: pxToVwMobile(15px);
+      padding-top: pxToVwMobile(20px);
+      border-top: $border-default;
+    }
+  }
+
+  &__date {
+    @include font-date;
+  }
+
+  &__description {
+    padding-top: pxToVwMobile(2px);
+    @include font-description;
+  }
+
+  &__cash {
+    @include font-default;
+
+    &--plus {
+      color: color('green');
+    }
+
+    &--minus {
+      color: color('red');
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: pxToVwMobile(-32px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

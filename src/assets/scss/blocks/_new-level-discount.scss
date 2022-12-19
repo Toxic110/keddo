@@ -1,0 +1,30 @@
+.new-level-discount {
+
+  &__title {
+    @include font-description;
+    text-align: center;
+
+    span {
+      @include font-default;
+    }
+  }
+
+  &__progress-bar {
+    margin: pxToVwMobile(20px) 0 pxToVwMobile(10px);
+    border-radius: pxToVwMobile(6px);
+
+    .rc-progress-line-path {
+      transition-duration: 1s !important;
+    }
+  }
+
+  &__progress-info {
+    display: flex;
+    justify-content: space-between;
+    @include font-default;
+  }
+
+  &__progress-start {
+    color: color('red');
+  }
+}

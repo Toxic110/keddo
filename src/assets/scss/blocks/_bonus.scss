@@ -1,0 +1,26 @@
+.bonus {
+
+  &__info {
+    padding: pxToVwMobile(20px) 0;
+  }
+
+  &__balls {
+    display: block;
+    text-align: center;
+    @include font-bonus;
+  }
+
+  &__name {
+    text-align: center;
+    text-transform: uppercase;
+    @include font-named;
+  }
+
+  &__description {
+    margin-top: pxToVwMobile(18px);
+    padding-top: pxToVwMobile(18px);
+    text-align: center;
+    border-top: $border-default;
+    @include font-description;
+  }
+}

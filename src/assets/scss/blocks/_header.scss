@@ -1,0 +1,14 @@
+.header {
+  padding: pxToVwMobile(26px) 0 pxToVwMobile(14px);
+  border-bottom: pxToVwMobile(.5px) solid color('black');
+
+  &__logo {
+    width: pxToVwMobile(108px);
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
